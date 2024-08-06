@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Layout</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        height: 100vh;
+        position: relative;
+        box-sizing: border-box;
+      }
+
+      .header,
+      .footer {
+        background-color: #007bff;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        position: absolute;
+        width: calc(100% - 0px); /* Adjust width to match container width */
+        left: 0px; /* Align with container's padding */
+        box-sizing: border-box;
+      }
+
+      .header {
+        top: 0;
+      }
+
+      .footer {
+        bottom: 0;
+        color: #b1ceee;
+        font-weight: normal;
+      }
+
+      .button-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px; /* Increased gap between buttons */
+        justify-content: center;
+        margin-top: 80px; /* Ensure space for the header */
+        margin-bottom: 60px; /* Ensure space for the footer */
+      }
+
+      .button {
+        flex: 1 0 21%;
+        background-color: white;
+        border: 1px solid #ccc;
+        padding: 15px;
+        text-align: center;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-decoration: none;
+        color: black;
+        margin-top: 20px;
+      }
+
+      .button:hover {
+        background-color: #f0f0f0;
+      }
+      @media only screen and (max-width: 900px) {
+        .footer {
+          /* background-color: lightblue;000 */
+          position: fixed;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">ग्राम पंचायत यवता</div>
+      <div class="button-grid">
+        <a
+          href="https://vaishdube9309.github.io/Shindi-Harali-Eligibles-List/"
+          class="button"
+          >ग्राम पंचायत</a
+        >
+        <a href="https://pawar616.github.io/vikaskame_display/" class="button"
+          >विकासकामे</a
+        >
+        <a href="https://kanchankb.github.io/Sarkari-yojana/" class="button"
+          >सरकारी योजना</a
+        >
+        <a
+          href="https://snehal-g-gaikwad.github.io/Complaint-Registration/"
+          class="button"
+          >तक्रार</a
+        >
+        <a
+          href="https://snehal-g-gaikwad.github.io/Demand-Registration/"
+          class="button"
+          >मागणी</a
+        >
+        <a href="https://kanchankb.github.io/gram-2/" class="button"
+          >प्रमाणपत्रे</a
+        >
+        <a
+          href="https://vaishdube9309.github.io/Labharthi/display.html"
+          class="button"
+          >लाभार्थी</a
+        >
+        <a href="https://vaishdube9309.github.io/Arogykendr/" class="button"
+          >आरोग्य केंद्र</a
+        >
+        <a
+          href="https://pawar616.github.io/req_form/Display.html"
+          class="button"
+          >JOB ALERT</a
+        >
+        <a href="https://snehal-g-gaikwad.github.io/KarbharnaS/" class="button"
+          >करभरणा</a
+        >
+        <a
+          href="https://vaishdube9309.github.io/PaniPuravataY/show_data.html"
+          class="button"
+          >पाणी पुरवठा</a
+        >
+        <a href="https://vaishdube9309.github.io/buttons/" class="button"
+          >इतर सेवा</a
+        >
+        <a href="https://vaishdube9309.github.io/Shetakari/" class="button"
+          >शेतकरी योजना</a
+        >
+        <a href="https://vaishdube9309.github.io/ShindiHarali/" class="button"
+          >घरकुल योजना</a
+        >
+      </div>
+      <div class="footer">@digispect Technology Pvt. Ltd</div>
+    </div>
+  </body>
+</html>
